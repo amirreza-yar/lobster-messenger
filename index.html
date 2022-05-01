@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- DIR-RTL CONFLICTS WITH BS5 CAROUSEL, SO DIR-RTL ADDED IN BODY -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="./StaticFiles for gitpage/app.css">
+	<link rel="stylesheet" href="./StaticFiles for gitpage/fonts.css">
+</head>
+<body dir="rtl">
+<!-- DIRECTION RTL  -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-blue container-fluid">
+			<div class="container">
+				
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<button type="button" class="nav-item simple-btn">
+							<img src="./StaticFiles for gitpage/img/profile-logo.svg" alt="Profile logo" width="35" height="35">
+						</button>
+						<button onclick="openNav()" type="button" class="nav-item fill-btn">
+							خانه
+						</button>
+
+						<div id="mySidenav" class="sidenav">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<a href="#">About</a>
+							<a href="#">Services</a>
+							<a href="#">Clients</a>
+							<a href="#">Contact</a>
+						</div>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#">پروژه ها</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">اخبار</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">بلاگ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">درباره ما</a>
+						</li>
+					</ul>
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="./StaticFiles for gitpage/img/logo.png" width="60px" height="60px" alt="taheri inst.">
+				</a>
+			</div>
+		</nav>
+		<div class="hero-banner container-fluid">
+			<h1 class="">پژوهشکده شهید طاهری</h1>
+		</div>
+	</header>
+
+	<section class="container-fluid p-0">
+		<div class="container-fluid light-grey">
+			<div class="container-md">
+				<div class="row flex-column-reverse flex-md-row">
+					<img src="./StaticFiles for gitpage/img/aboutus-photo.svg" width="150" height="147" class="col-md-3 my-5" alt="photo">
+					<div id="about-us" class="col-md-9 flex my-5">
+						<h1 class="font-sahel-bold">درباره ما</h1>
+						<p class="font-sahel fs-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+						<button type="button" class="offset font-sahel-bold float-start mx-4" style="font-family: Sahelbold;">بیشتر درباره ما</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="5000">
+					<div class="container-fluid blue-bg d-flex justify-content-center align-items-center">
+						<div class="container-md px-5">
+							<div class="row h-100">
+								<div id="about-us" class="col-md-9 py-5">
+									<h1 class="font-sahel-bold" style="color: #d4d4d4;">پروژه فلان</h1>
+									<h3 class="font-sahel text-light">عنوان فرعی اول</h3>
+									<p class="font-sahel fs-5 text-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+									<h3 class="font-sahel text-light">عنوان فرعی دوم</h3>
+									<p class="font-sahel fs-5 text-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+								</div>
+								<div class="col-md-3 pe-5 d-flex justify-content-center align-items-center"><img src="./StaticFiles for gitpage/img/large-pic.svg" width="300px" class="p-5" alt="photo"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="5000">
+					<div class="container-fluid primary-bg d-flex justify-content-center align-items-center">
+						<div class="container-md px-5">
+							<div class="row h-100">
+								<div id="about-us" class="col-md-9 py-5">
+									<h1 class="font-sahel-bold" style="color: #d4d4d4;">پروژه فلان</h1>
+									<h3 class="font-sahel text-light">عنوان فرعی اول</h3>
+									<p class="font-sahel fs-5 text-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+									<h3 class="font-sahel text-light">عنوان فرعی دوم</h3>
+									<p class="font-sahel fs-5 text-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+								</div>
+								<div class="col-md-3 pe-5 d-flex justify-content-center align-items-center"><img src="./StaticFiles for gitpage/img/large-pic.svg" width="300px" class="p-5" alt="photo"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="5000">
+					<div class="container-fluid secondary-bg d-flex justify-content-center align-items-center">
+						<div class="container-md px-5">
+							<div class="row h-100">
+								<div id="about-us" class="col-md-9 py-5">
+									<h1 class="font-sahel-bold" style="color: #d4d4d4;">پروژه فلان</h1>
+									<h3 class="font-sahel text-light">عنوان فرعی اول</h3>
+									<p class="font-sahel fs-5 text-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+									<h3 class="font-sahel text-light">عنوان فرعی دوم</h3>
+									<p class="font-sahel fs-5 text-light">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+								</div>
+								<div class="col-md-3 pe-5 d-flex justify-content-center align-items-center"><img src="./StaticFiles for gitpage/img/large-pic.svg" width="300px" class="p-5" alt="photo"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<img src="./StaticFiles for gitpage/img/cheveron-left.svg" width="18" aria-hidden="true">
+			</button>
+			<button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<img src="./StaticFiles for gitpage/img/cheveron-right.svg" width="18" aria-hidden="true">
+			</button>
+		</div>
+	</section>
+	<footer>
+		<div class="container-fluid primary-bg">
+			<div class="container" >
+				<div class="row">
+					<div class="col-md d-flex flex-column justify-content-center align-items-center py-5">
+						<img src="./StaticFiles for gitpage/img/logo.png" width="65" class="my-2" alt="photo">
+						<div class="" style="padding-left: 5%;">
+							<div class="my-3 d-flex align-items-center flex-row-reverse">
+								<img src="./StaticFiles for gitpage/img/phone.svg" width="30" class="" alt="photo">
+								<h4 class="text-light fs-5 mx-2 my-0" style="direction: ltr;">+71 32323232</h4>
+							</div>
+							<div class="my-3 d-flex align-items-center flex-row-reverse">
+								<img src="./StaticFiles for gitpage/img/website.svg" width="30" class="" alt="photo">
+								<h4 class="text-light fs-5 mx-2 my-0" style="direction: ltr;">www.domain.com</h4>
+							</div>
+							<div class="my-3 d-flex align-items-center flex-row-reverse">
+								<img src="./StaticFiles for gitpage/img/email.svg" width="30" class="" alt="photo">
+								<h4 class="text-light fs-5 mx-2 my-0" style="direction: ltr;">email@domain.com</h4>
+							</div>
+							<div class="my-3 d-flex align-items-center flex-row-reverse">
+								<img src="./StaticFiles for gitpage/img/address.svg" width="30" class="" alt="photo">
+								<h4 class="text-light fs-5 mx-2 my-0" style="direction: ltr;">Address</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="py-5">
+							<h3 class="font-sahel text-grey mx-3">دسترسی سریع</h3>
+							<div class="d-flex flex-wrap m-4">
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+								<h5 class="font-sahel fs-6 text-light mx-2">لینک سریع</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="py-5">
+							<h3 class="font-sahel text-grey mx-3 mb-4">ارسال تیکت</h3>
+							<div class="row my-2">
+								<div class="col-4">
+									<label class="font-sahel text-grey mx-3">اسم</label>
+								</div>
+								<div class="col-7">
+									<input class="form-control form-control-sm">
+								</div>
+							</div>
+							<div class="row my-2">
+								<div class="col-4">
+									<label class="font-sahel text-grey mx-3">ایمیل</label>
+								</div>
+								<div class="col-7">
+									<input class="form-control form-control-sm">
+								</div>
+							</div>
+							<div class="row my-2">
+								<div class="col-4">
+									<label class="font-sahel text-grey mx-3">متن تیکت</label>
+								</div>
+								<div class="col-7">
+									<textarea class="form-control form-control-sm"></textarea>
+								</div>
+							</div>
+							<button onclick="openNav()" type="button" class="fill-btn float-start ms-4 px-3 mt-3 mb-5">
+								ارسال تیکت
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid d-flex justify-content-center align-items-center p-0 m-0" style="background-color: #495a71ff; height: 50px;">
+			<p class="m-0 p-0 text-light" style="font-family: Tanha;">لایسنس وبسایت و کپی رایت - License and Copyright</p>
+		</div>
+	</footer>
+
+	<script src="./StaticFiles for gitpage/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+		
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	
+</body>
+</html>
